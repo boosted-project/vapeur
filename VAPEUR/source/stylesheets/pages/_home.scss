@@ -1,7 +1,12 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 #home {
-  background-color: #D23333;
   color: white;
-  height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -14,4 +19,128 @@
     font-weight: bold;
     font-size: 16px;
   }
+}
+
+#wrapper {
+  border-right: none;
+  border-left: none;
+  top: 0px;
+  width: 100%;
+  margin-top: -70px;
+  object-fit: cover;
+  position: relative;
+  // z-index: -1;
+}
+
+.banner {
+  color: white;
+  text-align: center;
+  height: calc(100vh);
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.concept-content {
+  h1 {
+  color: white;
+  font-size: 48px !important;
+  font-weight: 600;
+  }
+
+  h2 {
+  color: white;
+  font-size: 32px !important;
+  font-weight: 600;
+  }
+
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-container-nosservices {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-container-concept {
+  display: flex;
+  flex-direction: column;
+}
+
+.home-sub-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-sub-container-image {
+  object-fit: cover;
+  height: 50vh;
+  width: 50%;
+}
+
+.home-sub-container-content {
+  height: 50vh;
+  width: 50%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-banner-25vh {
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home-banner-50vh {
+  height: 50vh;
+}
+
+.banner-50vh {
+  height: 50vh;
+  color: white;
+  text-align: center;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+#home-social-sticky {
+position: fixed !important;
+top: 40vh;
+left: 1vw;
+display: flex;
+flex-direction: column;
+z-index: 2000;
+}
+
+#icon-facebook {
+  height: 50px;
+  width: 50px;
+  margin: 2px 0px 2px 0px;
+}
+
+#icon-phone {
+  height: 50px;
+  width: 50px;
+  margin: 2px 0px 2px 0px;
+  padding: 2px;
+}
+
+#icon-insta {
+  height: 50px;
+  width: 50px;
+  margin: 2px 0px 2px 0px;
+  padding: 2px;
 }

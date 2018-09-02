@@ -1,15 +1,41 @@
----
-title: Le Wagon - Middleman
----
+<%= partial "layouts/navbar" %>
+<div class="main-container">
+  <div id="home-social-sticky">
+    <img id="icon-phone" src="<%= image_path 'icon-phone.png' %>" style="">
+    <img id="icon-insta" src="<%= image_path 'icon-insta.png' %>" style="">
+    <img id="icon-facebook" src="<%= image_path 'icon-facebook.png' %>" style="">
+  </div>
+  <div id="wrapper">
+    <img class="banner" src="<%= image_path 'carriole.jpg' %>" style="">
+  </div>
 
-<div id="home">
-  <div class="home-content">
-    <%= image_tag "logo.png", width: "200" %>
-    <p>
-      Middleman is now running!
-    </p>
-    <p class="about">
-      <%= link_to "More about this template", "about.html" %>
-    </p>
+  <div class="home-container">
+    <div class="home-sub-container">
+      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
+      <div class="home-sub-container-content">
+        <p>Le concept</p>
+        <a href="/concept.html" class="btn btn-default">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+    <div class="home-sub-container">
+      <div class="home-sub-container-content">
+        <p>Nos services</p>
+        <a href="/nosservices.html" class="btn btn-default">EN SAVOIR PLUS</a>
+      </div>
+      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
+    </div>
+    <div class="home-sub-container">
+      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
+      <div class="home-sub-container-content">
+        <p>Contact</p>
+        <a href="/contact.html" class="btn btn-default">EN SAVOIR PLUS</a>
+      </div>
+    </div>
+  </div>
+  <div class="home-banner-25vh">
+    <button>Devis</button>
+  </div>
+  <div class="home-banner-50vh">
+    <img class="banner-50vh" src="<%= image_path 'carriole.jpg' %>" style="">
   </div>
 </div>

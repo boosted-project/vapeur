@@ -1,0 +1,11 @@
+#concept-container {
+  min-height: calc(100vh - 70px);
+  position: relative;
+}
+
+.concept-content {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  text-align: center;
+}
