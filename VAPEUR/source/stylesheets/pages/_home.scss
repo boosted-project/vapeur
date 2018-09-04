@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: white;
 }
 
 #home {
@@ -29,18 +30,57 @@
   margin-top: -70px;
   object-fit: cover;
   position: relative;
-  // z-index: -1;
 }
 
-.banner {
-  color: white;
-  text-align: center;
+
+#section {
+  position: relative;
   height: calc(100vh);
-  object-fit: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+#background {
+  background-image: linear-gradient(0deg, rgba(250,250,250,0) 65%, rgba(1,1,1,0.5) 100%);
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 300ms ease-in-out;
+}
+
+#background:not(:hover) {
+  filter: blur(6px);
+}
+
+#image {
+  background-image: linear-gradient(0deg, rgba(250,250,250,0) 65%, rgba(1,1,1,0.5) 100%);
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh);
+  width: 100%;
+}
+
+
+#banner-container-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+h1 {
+  color: $blue;
+  font-size: 72px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  margin: 0px 0px 50px 0px;
+
+}
+a {
+  padding: 0px 0px 50px 0px;
+}
 }
 
 .concept-content {
@@ -78,7 +118,8 @@
 }
 
 .home-sub-container-image {
-  object-fit: cover;
+  background-image: cover;
+  background-position: center;
   height: 50vh;
   width: 50%;
 }
@@ -86,11 +127,23 @@
 .home-sub-container-content {
   height: 50vh;
   width: 50%;
-  margin: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  h1 {
+    font-weight: 300;
+    color: #85c6af;
+  }
+  p {
+    font-family: Monserrat, sans-serif;
+    padding: 0px 30px 0px 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16;
+    color: $red;
+    text-align: center;
+  }
 }
 
 .home-banner-25vh {
@@ -100,12 +153,12 @@
   justify-content: space-around;
 }
 
-.home-banner-50vh {
-  height: 50vh;
+.home-banner-75vh {
+  height: 75vh;
 }
 
-.banner-50vh {
-  height: 50vh;
+.banner-75vh {
+  height: 75vh;
   color: white;
   text-align: center;
   object-fit: cover;
@@ -113,6 +166,8 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -143,4 +198,24 @@ z-index: 2000;
   width: 50px;
   margin: 2px 0px 2px 0px;
   padding: 2px;
+}
+
+#devis-btn {
+  border:1px solid $blue;
+  border-radius: 1px;
+  font-size:24px;
+  height:85px;
+  line-height: 85px;
+  width: 300px;
+  text-align: center;
+  margin: 80px 0px 0px 0px;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+  letter-spacing:2px;
+}
+
+#devis-btn:hover {
+  border:1px solid $blue;
+  background:$blue;
+  color: #8c7a69;
 }

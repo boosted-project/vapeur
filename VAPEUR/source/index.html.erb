@@ -6,36 +6,52 @@
     <img id="icon-facebook" src="<%= image_path 'icon-facebook.png' %>" style="">
   </div>
   <div id="wrapper">
-    <img class="banner" src="<%= image_path 'carriole.jpg' %>" style="">
   </div>
+<!--  -->
+  <div id="section" style="background-image: linear-gradient(to top, rgba(100,100,100,1), rgba(0,0,0,1));">
+    <div id="background">
+      <img id="image" src="<%= image_path 'home.jpg' %>">
+    </div>
+    <section id="banner-container-content">
+      <h1>BIENVENU CHEZ</h1>
+      <img src="<%= image_path 'logo.png' %>">
+      <a href="/contact.html" id="devis-btn" style="">RÉSERVER MAINTENANT</a>
+    </section>
+  </div>
+<!--  -->
 
+<!--  -->
   <div class="home-container">
     <div class="home-sub-container">
-      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
       <div class="home-sub-container-content">
-        <p>Le concept</p>
-        <a href="/concept.html" class="btn btn-default">EN SAVOIR PLUS</a>
+        <h1>LE CONCEPT</h1>
+        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
+        <a href="/concept.html" class="btn btn-primary">EN SAVOIR PLUS</a>
+      </div>
+      <img class="home-sub-container-image" src="<%= image_path 'concept.jpg' %>" style="">
+    </div>
+    <div class="home-sub-container">
+      <img class="home-sub-container-image" src="<%= image_path 'nosservices.jpg' %>" style="">
+      <div class="home-sub-container-content">
+        <h1>NOS SERVICES</h1>
+        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
+        <a href="/nosservices.html" class="btn btn-primary">EN SAVOIR PLUS</a>
       </div>
     </div>
     <div class="home-sub-container">
       <div class="home-sub-container-content">
-        <p>Nos services</p>
-        <a href="/nosservices.html" class="btn btn-default">EN SAVOIR PLUS</a>
+        <h1>CONTACT</h1>
+        <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500.</p>
+        <a href="/contact.html" class="btn btn-primary">EN SAVOIR PLUS</a>
       </div>
-      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
-    </div>
-    <div class="home-sub-container">
-      <img class="home-sub-container-image" src="<%= image_path 'carriole.jpg' %>" style="">
-      <div class="home-sub-container-content">
-        <p>Contact</p>
-        <a href="/contact.html" class="btn btn-default">EN SAVOIR PLUS</a>
-      </div>
+      <img class="home-sub-container-image" src="<%= image_path 'contact.jpg' %>" style="">
     </div>
   </div>
   <div class="home-banner-25vh">
-    <button>Devis</button>
+    <a href="/contact.html" class="btn btn-danger">DEMANDER UN DEVIS</a>
   </div>
-  <div class="home-banner-50vh">
-    <img class="banner-50vh" src="<%= image_path 'carriole.jpg' %>" style="">
+  <div class="home-banner-75vh">
+    <div class="banner-75vh" style="background-image: linear-gradient(0deg, rgba(1,1,1,0) 94%, rgba(250,250,250,1) 100%), url(/images/2ans.jpg);">
+    </div>
   </div>
 </div>
