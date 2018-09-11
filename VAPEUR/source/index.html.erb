@@ -1,9 +1,16 @@
 <%= partial "layouts/navbar" %>
 <div class="main-container">
   <div id="home-social-sticky">
-    <img id="icon-phone" src="<%= image_path 'icon-phone.png' %>" style="">
-    <img id="icon-insta" src="<%= image_path 'icon-insta.png' %>" style="">
+    <a href="tel:0676272831">
+      <img id="icon-phone" src="<%= image_path 'icon-phone.png' %>" style="">
+    </a>
+    <a href="https://www.instagram.com/vapeursdimsum/?hl=fr">
+      <img id="icon-insta" src="<%= image_path 'icon-insta.png' %>" style="">
+    </a>
+
+  <a href="https://www.facebook.com/vapeursdimsum/">
     <img id="icon-facebook" src="<%= image_path 'icon-facebook.png' %>" style="">
+  </a>
   </div>
   <div id="wrapper">
   </div>
@@ -14,13 +21,14 @@
     </div>
     <section id="banner-container-content">
       <h1>BIENVENU CHEZ</h1>
-      <img src="<%= image_path 'logo.png' %>">
+      <img class="logo-size-responsive" src="<%= image_path 'logo.png' %>">
       <a href="/contact.html" id="devis-btn" style="">RÉSERVER MAINTENANT</a>
     </section>
   </div>
 <!--  -->
 
 <!--  -->
+
   <div class="home-container">
     <div class="home-sub-container">
       <div class="home-sub-container-content">
@@ -30,7 +38,7 @@
       </div>
       <img class="home-sub-container-image" src="<%= image_path 'concept.jpg' %>" style="">
     </div>
-    <div class="home-sub-container">
+    <div class="home-sub-container reverse-wrap">
       <img class="home-sub-container-image" src="<%= image_path 'nosservices.jpg' %>" style="">
       <div class="home-sub-container-content">
         <h1>NOS SERVICES</h1>
@@ -48,10 +56,12 @@
     </div>
   </div>
   <div class="home-banner-25vh">
-    <a href="/contact.html" class="btn btn-danger">DEMANDER UN DEVIS</a>
+    <a href="/contact.html" id="devis-btn-2" style="">RÉSERVER MAINTENANT</a>
   </div>
   <div class="home-banner-75vh">
     <div class="banner-75vh" style="background-image: linear-gradient(0deg, rgba(1,1,1,0) 94%, rgba(250,250,250,1) 100%), url(/images/2ans.jpg);">
+    </div>
+    <div class="banner-75vh-mobile" style="background-image: linear-gradient(0deg, rgba(1,1,1,0) 94%, rgba(250,250,250,1) 100%), url(/images/2ans-mobile.jpg);">
     </div>
   </div>
 </div>
