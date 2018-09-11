@@ -1,12 +1,28 @@
 <%= partial "layouts/navbar" %>
 <div class="main-container">
-  <div id="wrapper">
-    <img class="banner" src="<%= image_path 'carriole.jpg' %>" style="">
-    <div class="concept-content">
-      <h1>CONTACTEZ-NOUS</h1>
-      <h2>UNE QUESTION OU UN COMMENTAIRE ?</h2>
-    </div>
-  </div>
-</div>
+  <div id="home-social-sticky">
+    <a href="tel:0676272831">
+      <img id="icon-phone" src="<%= image_path 'icon-phone.png' %>" style="">
+    </a>
+    <a href="https://www.instagram.com/vapeursdimsum/?hl=fr">
+      <img id="icon-insta" src="<%= image_path 'icon-insta.png' %>" style="">
+    </a>
 
+  <a href="https://www.facebook.com/vapeursdimsum/">
+    <img id="icon-facebook" src="<%= image_path 'icon-facebook.png' %>" style="">
+  </a>
+  </div>
+  <div id="wrapper">
+  </div>
+<!--  -->
+  <div id="section" style="background-image: linear-gradient(to top, rgba(100,100,100,1), rgba(0,0,0,1));">
+    <div id="background">
+      <img id="image" src="<%= image_path 'contact.jpg' %>">
+    </div>
+    <section id="banner-container-content">
+      <h1>CONTACTEZ-NOUS</h1>
+      <h2>UNE QUESTION OU UN COMMENTAIRE?</h2>
+      <a href="/contact.html" id="devis-btn" style="">RÉSERVER MAINTENANT</a>
+    </section>
+  </div>
 

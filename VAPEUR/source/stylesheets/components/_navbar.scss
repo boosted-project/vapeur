@@ -53,8 +53,6 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
-
   }
 }
 
@@ -109,7 +107,6 @@
 }
 .menu {
     margin: 0 30px 0 0;
-    position: fixed !important;
 }
 .menu a {
     clear: right;
@@ -120,7 +117,12 @@
 }
 
 span {
-    color: $red;
+  color: $red;
+}
+
+span:hover {
+  background-color: $red;
+  color: $blue;
 }
 
 label {
@@ -148,6 +150,7 @@ label {
         text-align: center;
         width: 100%;
         display: none;
+        position: fixed;
 
     }
     .menu a {
