@@ -293,3 +293,84 @@ z-index: 2000;
 .reverse-wrap {
   flex-wrap: wrap-reverse;
 }
+
+// annimation
+
+#container-annimation {
+  width: 100%;
+  height: 100vh;
+  margin-top: -72px;
+}
+
+#grid-annimation {
+  display: grid;
+  grid-template-rows: 33vh 34vh 33vh;
+  grid-template-columns: 33% 34% 33%;
+}
+
+#image-annimation {
+  height: 100%;
+  width: 100%;
+}
+
+#image-annimation-1 {
+  grid-row: 1 / span 1;
+  grid-column: 1/ span 1;
+}
+
+#image-annimation-2 {
+  grid-row: 1 / span 1;
+  grid-column: 2/ span 1;
+}
+
+#image-annimation-3 {
+  grid-row: 1 / span 1;
+  grid-column: 3/ span 1;
+}
+
+#image-annimation-4 {
+  grid-row: 2 / span 1;
+  grid-column: 1/ span 1;
+}
+
+#image-annimation-5 {
+  grid-row: 2 / span 1;
+  grid-column: 2/ span 1;
+}
+
+#image-annimation-6 {
+  grid-row: 2 / span 1;
+  grid-column: 3/ span 1;
+}
+
+#image-annimation-7 {
+  grid-row: 3 / span 1;
+  grid-column: 1/ span 1;
+}
+
+#image-annimation-8 {
+  grid-row: 3 / span 1;
+  grid-column: 2/ span 1;
+}
+
+#image-annimation-9 {
+  grid-row: 3 / span 1;
+  grid-column: 3/ span 1;
+}
+
+#container-annimation {
+  text-align: center;
+  h1 {
+    font-weight: 300;
+    color: #85c6af;
+  }
+  p {
+    font-family: Monserrat, sans-serif;
+    padding: 0px 30px 0px 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 16;
+    color: #c1a972;
+    text-align: center;
+  }
+}
