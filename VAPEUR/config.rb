@@ -21,6 +21,6 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
 end
 
-activate :directory_indexes
+# activate :directory_indexes
 
-activate :asset_hash
+# activate :asset_hash
